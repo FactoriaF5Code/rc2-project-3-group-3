@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+}
+
+:root {
+  --black: #071013;
+  --cyan: #23b5d3;
+  --moonstone: #75abbc;
+  --cadetgray: #8cadbc;
+  --cadetgray2: #a2aebb;
+  --platino: #dfe0e2;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--cyan);
+  display: flex;
+}
+
+header img {
+  width: 10%;
+}
+
+header ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header li {
+  color: var(--platino);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+header li:hover {
+  background-color: var(--platino);
+  color: var(--cyan);
+  border: solid 2px var(--cyan);
+}
