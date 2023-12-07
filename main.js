@@ -2,7 +2,7 @@ let cuerda = document.querySelector('#cuerda');
 let percusion = document.querySelector('#percusion');
 let viento = document.querySelector('#viento');
 
-let sonidoCuerda = new Audio('./sounds/guitarra-electrica.mp3');
+let sonidoCuerda = new Audio('./sounds/guitarra.mp3');
 let sonidoPercusion = new Audio('./sounds/bateria.mp3');
 let sonidoViento = new Audio('./sounds/trompeta.mp3');
 
