@@ -11,6 +11,11 @@
   src: url(./fonts/Quicksand-Regular.otf);
 }
 
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url(./fonts/Quicksand-Bold.otf);
+}
+
 :root {
   --black: #071013;
   --cyan: #23b5d3;
@@ -64,7 +69,7 @@ main.contenedor {
 }
 
 h1 {
-  font-family: 'Quicksand-Regular', Arial, sans-serif;
+  font-family: 'Quicksand-Bold', Arial, sans-serif;
   font-size: 3rem;
   margin: 2rem 0;
 }
