@@ -38,6 +38,8 @@ viento.onclick = function () {
   tiempoReproduccion();
 };
 
+/* TODO: función parar reproducción */
+
 function reproducirConTeclaC(tecla) {
   if (tecla.key === 'C' || tecla.key === 'c') {
     sonidoCuerda.play();
