@@ -52,7 +52,7 @@ function reproducirConTeclaP(tecla) {
   }
 }
 
-function reproducirConTeclaC(tecla) {
+function reproducirConTeclaV(tecla) {
   if (tecla.key === 'V' || tecla.key === 'v') {
     sonidoViento.play();
     tiempoReproduccion();
