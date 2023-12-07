@@ -3,6 +3,7 @@
   padding: 0;
   outline: none;
   list-style: none;
+  box-sizing: border-box;
 }
 
 :root {
@@ -44,4 +45,60 @@ header li:hover {
   background-color: var(--platino);
   color: var(--cyan);
   border: solid 2px var(--cyan);
+}
+
+body {
+  background-color: #dfe0e2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #a2aebb;
+  padding: 2rem;
+  width: 65%;
+  margin: 4rem 0;
+  box-shadow: 0.5rem 0.5rem 1rem 0 #071013;
+  border-radius: 1rem;
+}
+
+img {
+  width: 300px;
+}
+
+button {
+  border-radius: 1.2rem;
+  border: none;
+  font-size: 1.5rem;
+  background-color: #23b5d3;
+  color: white;
+  padding: 1.2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0 #a2aebb;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #23b5d3;
 }
