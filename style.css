@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url(./fonts/Quicksand-Regular.otf);
+}
+
 :root {
   --black: #071013;
   --cyan: #23b5d3;
@@ -48,8 +53,8 @@ header li:hover {
 }
 
 body {
-  background-color: #dfe0e2;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--platino);
+  font-family: 'Quicksand-Regular', Arial, sans-serif;
 }
 
 main.contenedor {
@@ -59,13 +64,13 @@ main.contenedor {
 }
 
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Quicksand-Regular', Arial, sans-serif;
   font-size: 3rem;
   margin: 2rem 0;
 }
 
 p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Quicksand-Regular', Arial, sans-serif;
   font-size: 1.5rem;
   margin: 2rem 0;
 }
@@ -74,11 +79,10 @@ section {
   display: flex;
   justify-content: center;
   gap: 4rem;
-  background-color: #a2aebb;
+  background-color: var(--cadetgray2);
   padding: 2rem;
-  width: 65%;
   margin: 4rem 0;
-  box-shadow: 0.5rem 0.5rem 1rem 0 #071013;
+  box-shadow: 0.5rem 0.5rem 1rem 0 var(--black);
   border-radius: 1rem;
 }
 
@@ -90,15 +94,15 @@ button {
   border-radius: 1.2rem;
   border: none;
   font-size: 1.5rem;
-  background-color: #23b5d3;
-  color: white;
+  background-color: var(--cyan);
+  color: var(--platino);
   padding: 1.2rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0 #a2aebb;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0 var(--cadetgray2);
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: white;
-  color: #23b5d3;
+  background-color: var(--platino);
+  color: var(--cyan);
 }
