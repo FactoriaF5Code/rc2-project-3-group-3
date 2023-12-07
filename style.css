@@ -4,6 +4,7 @@
   outline: none;
   list-style: none;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 @font-face {
@@ -33,7 +34,7 @@ header {
 }
 
 header img {
-  width: 10%;
+  width: 100px;
 }
 
 header ul {
