@@ -92,6 +92,10 @@ section {
   border-radius: 1rem;
 }
 
+article {
+  cursor: pointer;
+}
+
 img {
   width: 300px;
 }
