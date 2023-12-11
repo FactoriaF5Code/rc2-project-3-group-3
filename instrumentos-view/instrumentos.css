@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Regular';
+    src: url(./fonts/Quicksand-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Bold';
+    src: url(./fonts/Quicksand-Bold.otf);
+  }
+  
+  :root {
+    --black: #071013;
+    --cyan: #23b5d3;
+    --moonstone: #75abbc;
+    --cadetgray: #8cadbc;
+    --cadetgray2: #a2aebb;
+    --platino: #dfe0e2;
+  }
