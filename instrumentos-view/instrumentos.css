@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: none;
+  outline: 1px solid #071013;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
@@ -69,5 +69,49 @@ header li:hover {
 }
 
 .container-images-cuerda {
+  width: 80%;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #8bacbb;
+  border-radius: 1rem;
   display: grid;
+  grid-template-areas:
+    'cuerda1 cuerda2 cuerda3 cuerda4 cuerda5'
+    'cuerda1 cuerda6 cuerda6 cuerda4 cuerda5';
+  grid-template-columns: 1.5fr 0.75fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.container-images-cuerda :nth-child(1) {
+  grid-area: cuerda1;
+  width: fit-content;
+}
+
+.container-images-cuerda :nth-child(2) {
+  grid-area: cuerda2;
+}
+
+.container-images-cuerda :nth-child(3) {
+  grid-area: cuerda3;
+}
+
+.container-images-cuerda :nth-child(4) {
+  grid-area: cuerda4;
+}
+
+.container-images-cuerda :nth-child(5) {
+  grid-area: cuerda5;
+}
+
+.container-images-cuerda :nth-child(6) {
+  grid-area: cuerda6;
+}
+
+.container-images-cuerda img {
+  max-width: 100%;
+}
+
+p {
+  text-align: center;
+  margin: 2rem;
 }
