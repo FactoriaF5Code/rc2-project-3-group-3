@@ -1,10 +1,10 @@
-let cuerda = document.querySelector('#cuerda');
-let percusion = document.querySelector('#percusion');
-let viento = document.querySelector('#viento');
+let cuerda = document.querySelector("#cuerda");
+let percusion = document.querySelector("#percusion");
+let viento = document.querySelector("#viento");
 
-let sonidoCuerda = new Audio('./sounds/guitarra.mp3');
-let sonidoPercusion = new Audio('./sounds/bateria.mp3');
-let sonidoViento = new Audio('./sounds/trompeta.mp3');
+let sonidoCuerda = new Audio("./sounds/guitarra.mp3");
+let sonidoPercusion = new Audio("./sounds/bateria.mp3");
+let sonidoViento = new Audio("./sounds/trompeta.mp3");
 
 function tiempoReproduccion() {
   setTimeout(function () {
@@ -41,26 +41,26 @@ viento.onclick = function () {
 /* TODO: función parar reproducción */
 
 function reproducirConTeclaC(tecla) {
-  if (tecla.key === 'C' || tecla.key === 'c') {
+  if (tecla.key === "C" || tecla.key === "c") {
     sonidoCuerda.play();
     tiempoReproduccion();
   }
 }
 
 function reproducirConTeclaP(tecla) {
-  if (tecla.key === 'P' || tecla.key === 'p') {
+  if (tecla.key === "P" || tecla.key === "p") {
     sonidoPercusion.play();
     tiempoReproduccion();
   }
 }
 
 function reproducirConTeclaV(tecla) {
-  if (tecla.key === 'V' || tecla.key === 'v') {
+  if (tecla.key === "V" || tecla.key === "v") {
     sonidoViento.play();
     tiempoReproduccion();
   }
 }
 
-document.addEventListener('keydown', reproducirConTeclaC);
-document.addEventListener('keydown', reproducirConTeclaP);
-document.addEventListener('keydown', reproducirConTeclaV);
+document.addEventListener("keydown", reproducirConTeclaC);
+document.addEventListener("keydown", reproducirConTeclaP);
+document.addEventListener("keydown", reproducirConTeclaV);

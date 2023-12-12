@@ -26,6 +26,11 @@
   --platino: #dfe0e2;
 }
 
+body {
+  background-color: var(--platino);
+  font-family: 'Quicksand-Regular', Arial, sans-serif;
+}
+
 header {
   height: 100px;
   width: 100%;
@@ -57,11 +62,6 @@ header li:hover {
   background-color: var(--platino);
   color: var(--cyan);
   border: solid 2px var(--cyan);
-}
-
-body {
-  background-color: var(--platino);
-  font-family: 'Quicksand-Regular', Arial, sans-serif;
 }
 
 main.contenedor {
