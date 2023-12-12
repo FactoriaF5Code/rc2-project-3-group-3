@@ -28,6 +28,7 @@
 
 body {
   background-color: var(--platino);
+  color: var(--black);
   font-family: 'Quicksand-Regular', Arial, sans-serif;
 }
 
@@ -65,8 +66,9 @@ header li:hover {
 }
 
 .negrita {
-  font-weight: bold;
+  font-family: 'Quicksand-Bold';
   font-size: 2rem;
+  color: var(--cyan);
 }
 
 
