@@ -134,9 +134,9 @@ p {
   border-radius: 1rem;
   display: grid;
   grid-template-areas:
-    'percusion1 percusion2 percusion3'
-    'percusion4 percusion5 percusion3';
-  grid-template-columns: 1.5fr 2fr 1fr;
+    'percusion1 percusion1 percusion2 percusion3'
+    'percusion4 percusion5 percusion5 percusion3';
+  grid-template-columns: 1fr 0.5fr 2fr 1fr;
   grid-template-rows: 0.3fr 0.6fr;
 }
 
