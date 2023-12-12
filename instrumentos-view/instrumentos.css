@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: solid 1px green;
+  outline: none;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
@@ -89,6 +89,7 @@ section{
 
 .container-images-cuerda :nth-child(1) {
   grid-area: cuerda1;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .container-images-cuerda :nth-child(2) {
@@ -105,6 +106,7 @@ section{
 
 .container-images-cuerda :nth-child(5) {
   grid-area: cuerda5;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .container-images-cuerda :nth-child(6) {
@@ -116,6 +118,7 @@ section{
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+  border: solid 5px var(--cadetgray);
 }
 
 p {
@@ -125,34 +128,47 @@ p {
   font-size: 1.5rem;
 }
 
-.container-images-viento {
+.container-images-percusion {
   padding: 2rem;
-  background-color: #8bacbb;
+  background-color: var(--cadetgray);
   border-radius: 1rem;
   display: grid;
   grid-template-areas:
-    'percusion1 percusion2 percusion3 '
+    'percusion1 percusion2 percusion3'
     'percusion4 percusion5 percusion3';
-  grid-template-columns: 1.5fr 1.5fr 1fr;
-  grid-template-rows: 0.8fr 1.2fr;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  grid-template-rows: 0.3fr 0.8fr;
 }
 
 .container-images-percusion :nth-child(1) {
   grid-area: percusion1;
+  border-radius: 1rem 0 0 0;
+  width: 100%;
 }
 
 .container-images-percusion :nth-child(2) {
   grid-area: percusion2;
+  width: 100%;
 }
 
 .container-images-percusion :nth-child(3) {
   grid-area: percusion3;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .container-images-percusion :nth-child(4) {
   grid-area: percusion4;
+  border-radius: 0 0 0 1rem;
 }
 
 .container-images-percusion :nth-child(5) {
   grid-area: percusion5;
+}
+
+.container-images-percusion img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border: solid 5px var(--cadetgray);
 }
