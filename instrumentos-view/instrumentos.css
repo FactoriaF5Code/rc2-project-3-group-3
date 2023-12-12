@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid #071013;
+  outline: solid 1px green;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
@@ -66,12 +66,17 @@ header li:hover {
 
 .negrita {
   font-weight: bold;
+  font-size: 2rem;
+}
+
+
+section{
+  width: 80%;
+  margin: 2rem auto;
 }
 
 .container-images-cuerda {
-  width: 80%;
   padding: 2rem;
-  margin: 2rem auto;
   background-color: #8bacbb;
   border-radius: 1rem;
   display: grid;
@@ -84,7 +89,6 @@ header li:hover {
 
 .container-images-cuerda :nth-child(1) {
   grid-area: cuerda1;
-  width: fit-content;
 }
 
 .container-images-cuerda :nth-child(2) {
@@ -109,9 +113,46 @@ header li:hover {
 
 .container-images-cuerda img {
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 p {
+  width: 80%;
+  margin: 5rem auto;
   text-align: center;
-  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.container-images-viento {
+  padding: 2rem;
+  background-color: #8bacbb;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-areas:
+    'percusion1 percusion2 percusion3 '
+    'percusion4 percusion5 percusion3';
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+}
+
+.container-images-percusion :nth-child(1) {
+  grid-area: percusion1;
+}
+
+.container-images-percusion :nth-child(2) {
+  grid-area: percusion2;
+}
+
+.container-images-percusion :nth-child(3) {
+  grid-area: percusion3;
+}
+
+.container-images-percusion :nth-child(4) {
+  grid-area: percusion4;
+}
+
+.container-images-percusion :nth-child(5) {
+  grid-area: percusion5;
 }
