@@ -102,20 +102,10 @@ img {
   width: 300px;
 }
 
-button {
-  border-radius: 1.2rem;
-  border: none;
-  font-size: 1.5rem;
-  background-color: var(--cyan);
-  color: var(--platino);
-  padding: 1.2rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0 var(--cadetgray2);
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s;
+#cuerda img{
+  border-radius: 1rem 0 0 1rem;
+}
+#viento img{
+  border-radius: 0 1rem 1rem 0;
 }
 
-button:hover {
-  background-color: var(--platino);
-  color: var(--cyan);
-}

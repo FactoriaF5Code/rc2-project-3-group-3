@@ -8,12 +8,12 @@
 }
 
 @font-face {
-  font-family: 'Quicksand-Regular';
+  font-family: "Quicksand-Regular";
   src: url(../fonts/Quicksand-Regular.otf);
 }
 
 @font-face {
-  font-family: 'Quicksand-Bold';
+  font-family: "Quicksand-Bold";
   src: url(../fonts/Quicksand-Bold.otf);
 }
 
@@ -29,7 +29,7 @@
 body {
   background-color: var(--platino);
   color: var(--black);
-  font-family: 'Quicksand-Regular', Arial, sans-serif;
+  font-family: "Quicksand-Regular", Arial, sans-serif;
 }
 
 header {
@@ -66,13 +66,12 @@ header li:hover {
 }
 
 .negrita {
-  font-family: 'Quicksand-Bold';
+  font-family: "Quicksand-Bold";
   font-size: 2rem;
   color: var(--cyan);
 }
 
-
-section{
+section {
   width: 80%;
   margin: 2rem auto;
 }
@@ -83,8 +82,8 @@ section{
   border-radius: 1rem;
   display: grid;
   grid-template-areas:
-    'cuerda1 cuerda2 cuerda3 cuerda4 cuerda5'
-    'cuerda1 cuerda6 cuerda6 cuerda4 cuerda5';
+    "cuerda1 cuerda2 cuerda3 cuerda4 cuerda5"
+    "cuerda1 cuerda6 cuerda6 cuerda4 cuerda5";
   grid-template-columns: 1.5fr 0.75fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -119,7 +118,7 @@ section{
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 p {
@@ -135,8 +134,8 @@ p {
   border-radius: 1rem;
   display: grid;
   grid-template-areas:
-    'percusion1 percusion1 percusion2 percusion3'
-    'percusion4 percusion5 percusion5 percusion3';
+    "percusion1 percusion1 percusion2 percusion3"
+    "percusion4 percusion5 percusion5 percusion3";
   grid-template-columns: 1fr 0.5fr 2fr 1fr;
   grid-template-rows: 0.3fr 0.6fr;
 }
@@ -165,10 +164,55 @@ p {
 }
 
 .container-images-percusion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+.container-images-viento {
+  padding: 2rem;
+  background-color: var(--cadetgray);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-areas:
+    "viento1 viento2 viento3 viento3 viento4"
+    "viento1 viento2 viento5 viento6 viento4";
+  grid-template-columns: 1fr 1fr 0.8fr 1.2fr 1fr;
+  grid-template-rows: 0.75fr 0.75fr;
+}
+
+.container-images-viento :nth-child(1) {
+  grid-area: viento1;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.container-images-viento :nth-child(2) {
+  grid-area: viento2;
+}
+
+.container-images-viento :nth-child(3) {
+  grid-area: viento3;
+}
+
+.container-images-viento :nth-child(4) {
+  grid-area: viento4;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container-images-viento :nth-child(5) {
+  grid-area: viento5;
+}
+
+.container-images-viento :nth-child(6) {
+  grid-area: viento6;
+}
+
+.container-images-viento img {
   /* max-width: 100%; */
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-  
 }
