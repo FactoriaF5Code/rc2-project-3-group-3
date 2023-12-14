@@ -89,7 +89,7 @@ img:hover{
 
 .container-images-cuerda {
   padding: 2rem;
-  background-color: #8bacbb;
+  background-color: var(--cadetgray);
   border-radius: 1rem;
   display: grid;
   grid-template-areas:
