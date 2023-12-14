@@ -38,7 +38,6 @@ viento.onclick = function () {
   tiempoReproduccion();
 };
 
-/* TODO: función parar reproducción */
 
 function reproducirConTeclaC(tecla) {
   if (tecla.key === "C" || tecla.key === "c") {
@@ -59,8 +58,17 @@ function reproducirConTeclaV(tecla) {
     sonidoViento.play();
     tiempoReproduccion();
   }
+} 
+
+function pararReproduccion(tecla) {
+  if (tecla.key === "S" || tecla.key === "s") {
+    sonidoViento.pause();
+    sonidoCuerda.pause();
+    sonidoPercusion.pause();
+  }
 }
 
 document.addEventListener("keydown", reproducirConTeclaC);
 document.addEventListener("keydown", reproducirConTeclaP);
 document.addEventListener("keydown", reproducirConTeclaV);
+document.addEventListener("keydown", pararReproduccion);
