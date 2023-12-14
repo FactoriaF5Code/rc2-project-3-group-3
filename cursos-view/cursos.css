@@ -108,15 +108,16 @@ i:hover{
 }
 .img-container{
   overflow: hidden;
+  border-radius: 1rem;
 }
 
-img{
+section img{
   border-radius: 1rem;
   filter: sepia(0.5);
   transition: 0.3s ease-in-out;  
 }
 
-img:hover{
+section img:hover{
   filter: sepia(0);
   transform: scale(1.1);
 }
