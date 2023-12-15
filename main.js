@@ -58,7 +58,7 @@ function reproducirConTeclaV(tecla) {
     sonidoViento.play();
     tiempoReproduccion();
   }
-} 
+}
 
 function pararReproduccion(tecla) {
   if (tecla.key === "S" || tecla.key === "s") {

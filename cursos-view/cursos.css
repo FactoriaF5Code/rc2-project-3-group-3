@@ -83,50 +83,48 @@ section {
   gap: 1rem;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-.slider{
+.slider {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-
-i{  
+i {
   font-size: 5rem;
   color: var(--black);
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-i:hover{
+i:hover {
   color: var(--platino);
 }
-.img-container{
+.img-container {
   overflow: hidden;
   border-radius: 1rem;
- 
 }
 
-section img{
+section img {
   border-radius: 1rem;
   filter: sepia(0.5);
-  transition: 0.3s ease-in-out;  
+  transition: 0.3s ease-in-out;
 }
 
-section img:hover{
+section img:hover {
   filter: sepia(0);
   transform: scale(1.1);
 }
 
-section p{
+section p {
   text-align: center;
   color: var(--platino);
   font-weight: bold;
 }
 
-img{
+img {
   max-width: 500px;
 }

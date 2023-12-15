@@ -8,12 +8,12 @@
 }
 
 @font-face {
-  font-family: 'Quicksand-Regular';
+  font-family: "Quicksand-Regular";
   src: url(./fonts/Quicksand-Regular.otf);
 }
 
 @font-face {
-  font-family: 'Quicksand-Bold';
+  font-family: "Quicksand-Bold";
   src: url(./fonts/Quicksand-Bold.otf);
 }
 
@@ -28,7 +28,7 @@
 
 body {
   background-color: var(--platino);
-  font-family: 'Quicksand-Regular', Arial, sans-serif;
+  font-family: "Quicksand-Regular", Arial, sans-serif;
 }
 
 header {
@@ -69,15 +69,19 @@ main.contenedor {
   flex-direction: column;
   align-items: center;
 }
-
+.negrita {
+  font-family: "Quicksand-Bold";
+  font-size: 2rem;
+  color: var(--cyan);
+}
 h1 {
-  font-family: 'Quicksand-Bold', Arial, sans-serif;
+  font-family: "Quicksand-Bold", Arial, sans-serif;
   font-size: 3rem;
   margin: 2rem 0;
 }
 
 p {
-  font-family: 'Quicksand-Regular', Arial, sans-serif;
+  font-family: "Quicksand-Regular", Arial, sans-serif;
   font-size: 1.5rem;
   margin: 1.5rem;
   text-align: center;
@@ -102,10 +106,9 @@ img {
   width: 300px;
 }
 
-#cuerda img{
+#cuerda img {
   border-radius: 1rem 0 0 1rem;
 }
-#viento img{
+#viento img {
   border-radius: 0 1rem 1rem 0;
 }
-
