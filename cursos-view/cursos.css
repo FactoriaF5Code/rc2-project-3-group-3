@@ -65,14 +65,14 @@ header li:hover {
 }
 
 .main-description {
-  width: 80%;
+  width: 50%;
   margin: 3rem auto;
   text-align: center;
   font-size: 1.5rem;
 }
 
 section {
-  width: 80%;
+  width: 50%;
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 1rem;
@@ -93,14 +93,12 @@ h1{
   align-items: center;
 }
 
-section p{
-  text-align: center;
-}
 
 i{  
   font-size: 5rem;
   color: var(--black);
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 i:hover{
@@ -109,6 +107,7 @@ i:hover{
 .img-container{
   overflow: hidden;
   border-radius: 1rem;
+ 
 }
 
 section img{
@@ -122,4 +121,12 @@ section img:hover{
   transform: scale(1.1);
 }
 
+section p{
+  text-align: center;
+  color: var(--platino);
+  font-weight: bold;
+}
 
+img{
+  max-width: 500px;
+}
