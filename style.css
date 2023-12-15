@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url(./fonts/Quicksand-Regular.otf);
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url(./fonts/Quicksand-Bold.otf);
+}
+
+:root {
+  --black: #071013;
+  --cyan: #23b5d3;
+  --moonstone: #75abbc;
+  --cadetgray: #8cadbc;
+  --cadetgray2: #a2aebb;
+  --platino: #dfe0e2;
+}
+
+body {
+  background-color: var(--platino);
+  font-family: "Quicksand-Regular", Arial, sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--cyan);
+  display: flex;
+}
+
+header img {
+  width: 100px;
+}
+
+header ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header li {
+  color: var(--platino);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+header li:hover {
+  background-color: var(--platino);
+  color: var(--cyan);
+  border: solid 2px var(--cyan);
+}
+
+main.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.negrita {
+  font-family: "Quicksand-Bold";
+  font-size: 2rem;
+  color: var(--cyan);
+}
+h1 {
+  font-family: "Quicksand-Bold", Arial, sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+p {
+  font-family: "Quicksand-Regular", Arial, sans-serif;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  background-color: var(--cadetgray2);
+  padding: 2rem;
+  margin: 4rem 0;
+  box-shadow: 0.5rem 0.5rem 1rem 0 var(--black);
+  border-radius: 1rem;
+}
+
+article {
+  cursor: pointer;
+}
+
+img {
+  width: 300px;
+}
+
+#cuerda img {
+  border-radius: 1rem 0 0 1rem;
+}
+#viento img {
+  border-radius: 0 1rem 1rem 0;
+}

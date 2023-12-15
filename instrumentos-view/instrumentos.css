@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url(../fonts/Quicksand-Regular.otf);
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url(../fonts/Quicksand-Bold.otf);
+}
+
+:root {
+  --black: #071013;
+  --cyan: #23b5d3;
+  --moonstone: #75abbc;
+  --cadetgray: #8cadbc;
+  --cadetgray2: #a2aebb;
+  --platino: #dfe0e2;
+}
+
+body {
+  background-color: var(--platino);
+  color: var(--black);
+  font-family: "Quicksand-Regular", Arial, sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--cyan);
+  display: flex;
+}
+
+header img {
+  width: 100px;
+}
+
+header ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header li {
+  color: var(--platino);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+header li:hover {
+  background-color: var(--platino);
+  color: var(--cyan);
+  border: solid 2px var(--cyan);
+}
+
+.negrita {
+  font-family: "Quicksand-Bold";
+  font-size: 2rem;
+  color: var(--cyan);
+}
+
+section {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+img {
+  transition: ease-in-out 0.3s;
+  opacity: 0.7;
+  filter: grayscale(0.5);
+}
+
+img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.container-images-cuerda {
+  padding: 2rem;
+  background-color: var(--cadetgray);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-areas:
+    "cuerda1 cuerda2 cuerda3 cuerda4 cuerda5"
+    "cuerda1 cuerda6 cuerda6 cuerda4 cuerda5";
+  grid-template-columns: 1.5fr 0.75fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.container-images-cuerda :nth-child(1) {
+  grid-area: cuerda1;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.container-images-cuerda :nth-child(2) {
+  grid-area: cuerda2;
+}
+
+.container-images-cuerda :nth-child(3) {
+  grid-area: cuerda3;
+}
+
+.container-images-cuerda :nth-child(4) {
+  grid-area: cuerda4;
+}
+
+.container-images-cuerda :nth-child(5) {
+  grid-area: cuerda5;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container-images-cuerda :nth-child(6) {
+  grid-area: cuerda6;
+}
+
+.container-images-cuerda img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+p {
+  width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.container-images-percusion {
+  padding: 2rem;
+  background-color: var(--cadetgray);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-areas:
+    "percusion1 percusion1 percusion2 percusion3"
+    "percusion4 percusion5 percusion5 percusion3";
+  grid-template-columns: 1fr 0.5fr 2fr 1fr;
+  grid-template-rows: 0.3fr 0.6fr;
+}
+
+.container-images-percusion :nth-child(1) {
+  grid-area: percusion1;
+  border-radius: 1rem 0 0 0;
+}
+
+.container-images-percusion :nth-child(2) {
+  grid-area: percusion2;
+}
+
+.container-images-percusion :nth-child(3) {
+  grid-area: percusion3;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container-images-percusion :nth-child(4) {
+  grid-area: percusion4;
+  border-radius: 0 0 0 1rem;
+}
+
+.container-images-percusion :nth-child(5) {
+  grid-area: percusion5;
+}
+
+.container-images-percusion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.container-images-viento {
+  padding: 2rem;
+  background-color: var(--cadetgray);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-areas:
+    "viento1 viento2 viento3 viento3 viento4"
+    "viento1 viento2 viento5 viento6 viento4";
+  grid-template-columns: 1fr 1fr 0.8fr 1.2fr 1fr;
+  grid-template-rows: 0.75fr 0.75fr;
+}
+
+.container-images-viento :nth-child(1) {
+  grid-area: viento1;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.container-images-viento :nth-child(2) {
+  grid-area: viento2;
+}
+
+.container-images-viento :nth-child(3) {
+  grid-area: viento3;
+}
+
+.container-images-viento :nth-child(4) {
+  grid-area: viento4;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container-images-viento :nth-child(5) {
+  grid-area: viento5;
+}
+
+.container-images-viento :nth-child(6) {
+  grid-area: viento6;
+}
+
+.container-images-viento img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}

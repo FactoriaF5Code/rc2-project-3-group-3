@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Plataforma capaz de reproducir sonidos básicos de instrumentos musicales."
+    />
+    <meta name="author" content="Rock Code" />
+    <meta
+      name="keywords"
+      content="sonidos, música, instrumentos, cursos de música"
+    />
+    <title>Rock Code</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html"><img src="./images/LogoCombinado.png" /></a>
+      <ul>
+        <a href="./index.html"><li>Inicio</li></a>
+        <a href="./instrumentos-view/cuerda.html"><li>Cuerda</li></a>
+        <a href="./instrumentos-view/percusion.html"><li>Percusión</li></a>
+        <a href="./instrumentos-view/viento.html"><li>Viento</li></a>
+        <a href="./cursos-view/cursos.html"><li>Cursos</li></a>
+      </ul>
+    </header>
+
+    <main class="contenedor">
+      <h1>CONOCE ROCK CODE</h1>
+      <p>
+        En esta plataforma podrás aprender a identificar el sonido de distintos
+        instrumentos de una manera muy sencilla.
+      </p>
+      <p>
+        ¡Comienza <span class="negrita">clickando</span> en cada una de las
+        imágenes o si lo prefieres, pulsa las teclas
+        <span class="negrita">C, P</span> y <span class="negrita">V</span>! Para
+        parar el sonido, pulsa <span class="negrita">S</span>.
+      </p>
+      <section>
+        <article id="cuerda">
+          <img
+            src="./images/instrumento-cuerda.jpg"
+            alt="instrumento de cuerda"
+            title="pulsa C para reproducir"
+          />
+        </article>
+        <article id="percusion">
+          <img
+            src="./images/instrumento-percusion.jpg"
+            alt="instrumento de percusión"
+            title="pulsa P para reproducir"
+          />
+        </article>
+        <article id="viento">
+          <img
+            src="./images/instrumento-viento.jpg"
+            alt="instrumento de viento"
+            title="pulsa V para reproducir"
+          />
+        </article>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
